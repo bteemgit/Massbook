@@ -1,0 +1,21 @@
+<resources>
+
+    <dimen name="header_text_size">25sp</dimen>
+    <dimen name="header_padding">44dp</dimen>
+    <dimen name="text_padding">10dp</dimen>
+    <dimen name="header_height">80dp</dimen>
+    <dimen name="grid_padding">-5dp</dimen>
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="text_size_1">18sp</dimen>
+    <dimen name="action_bar">72dp</dimen>
+    <dimen name="web_size">13sp</dimen>
+    <dimen name="web_size_1">7sp</dimen>
+    <dimen name="button">220dp</dimen>
+
+    <dimen name="indicator_size">2dp</dimen>
+
+    <dimen name="pin_content_layout_padding">40dp</dimen>
+    <dimen name="pin_label_margin">20dp</dimen>
+    <dimen name="pin_min_width">32dp</dimen>
+
+</resources>

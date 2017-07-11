@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pin_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginRight="20sp"
+            android:gravity="center_horizontal"
+            android:text="@string/pin_label_text"
+
+            android:textSize="@dimen/web_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/pin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingStart="@dimen/header_padding"
+            android:paddingEnd="@dimen/header_padding"
+            android:orientation="horizontal"
+            android:padding="@dimen/text_size">
+            <me.philio.pinentry.PinEntryView
+                android:id="@+id/pin_entry_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:accentType="character"
+                app:digitBackground="@drawable/background_border"
+                app:digitTextSize="11sp"
+
+                app:pinInputType="number" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:weightSum="1">
+
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="@dimen/button"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size"
+                android:layout_weight="0.29" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1.5">
+
+        <EditText
+            android:id="@+id/pin_hidden_edittext"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:contentDescription="@string/pin_content_desc"
+            android:cursorVisible="false"
+            android:gravity="center_horizontal"
+            android:maxLength="5"
+            android:password="true"
+            android:textColor="#00000000" />
+
+    </LinearLayout>
+</LinearLayout>
